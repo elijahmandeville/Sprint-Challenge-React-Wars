@@ -26,10 +26,12 @@
 
 .body {
   background-color: cornsilk;
+  box-shadow: 3px 3px 5px black;
 
   transition-property: color;
   transition-duration: 0.7s;
   color: black;
+
 
   &:hover {
     transition-property: color;
