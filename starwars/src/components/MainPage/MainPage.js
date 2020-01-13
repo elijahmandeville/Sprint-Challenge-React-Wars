@@ -4,7 +4,7 @@ import CharCard from '../CharCard/CharCard';
 
 function MainPage(props) {
     return (
-        <div>
+        <div className="container">
             {props.dataProp.map((e, i) => {
                 return <CharCard key={i} character={e} />
             })}

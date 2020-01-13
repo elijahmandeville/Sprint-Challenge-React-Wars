@@ -4,7 +4,7 @@ import axios from 'axios';
 import MainPage from './components/MainPage/MainPage';
 
 const App = () => {
-  const [ data, setData ] = useState([]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     axios
@@ -19,7 +19,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <MainPage dataProp={data}></MainPage>
+      <div>
+        <MainPage dataProp={data}></MainPage>
+      </div>
     </div>
   );
 }
